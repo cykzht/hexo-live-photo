@@ -6,7 +6,7 @@ A lightweight and easy-to-use Hexo plugin for elegantly displaying Live Photos (
 
 Today's smartphones (such as iPhone's Live Photo and similar features on some Android devices) can capture dynamic photos, recording approximately 3 seconds of dynamic video and audio before and after the shot. However, when we deploy blog posts to static websites, these dynamic photos are often degraded to static JPEG images, losing their vivid core experience.
 
-**Hexo-live-photo** is a plugin born to solve this problem. It parses Live Photo resources (a `.jpg` image and an `.mp4` video) and utilizes HTML5 video playback technology to perfectly restore the playback effect of dynamic photos without affecting page loading performance, making your memories more vivid.
+**Hexo-live-photo** is born to solve this problem. By parsing Live Photo resources (a `.jpg` image and an `.mp4` video) and utilizing HTML5 video playback technology, it perfectly restores the playback effect of dynamic photos in your Hexo blog without affecting page loading performance, making your memories more vivid.
 
 ## Usage Instructions
 
@@ -23,15 +23,14 @@ npm install hexo-live-photo --save
 
 ## Configuration
 
-Add the following options to the main configuration file `_config.yml` of Hexo:
+Add the following options in Hexo's main configuration file `_config.yml`:
 
 ```yaml
 livephoto:
   enable: true
   autoplay: true
   hover_to_play: true
-  touch_to_play: true
-  click_to_play: false
+  click_to_play: true
   lazy_load: true
   threshold: 0.8
   badge: true
@@ -42,6 +41,7 @@ livephoto:
   keep_observing: false
   hover_delay: 300
   touch_delay: 100
+  weixin_disable_autoplay: true
 ```
 
 ## Usage in Articles
@@ -54,6 +54,11 @@ Use the `{% live_photo %}` tag anywhere in your Markdown articles (`.md` files) 
 {% livephoto image_path video_path %}
 ```
 
+## Changelog
+
+- V1.1.2: Fixed the display issue of the loading indicator, added CSS styles for displaying two images in a row on mobile devices.
+- V1.1.1: Added compatibility support for WeChat, fixed autoplay issues on some browsers.
+
 ## Contributions
 
 Welcome to submit Issues and Pull Requests!
@@ -64,4 +69,4 @@ MIT
 
 ## Support
 
-If this plugin has helped you, please give a star ⭐. If you encounter any issues during use, please submit [Issues](https://github.com/cykzht/hexo-live-photo/issues).
+If this plugin has helped you, please give a star ⭐. If you encounter any problems during use, please submit [Issues](https://github.com/cykzht/hexo-live-photo/issues).

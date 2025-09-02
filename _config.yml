@@ -3,8 +3,7 @@ livephoto:
   enable: true
   autoplay: true          # 是否自动播放（当进入视口时）
   hover_to_play: true     # 是否启用悬停播放
-  touch_to_play: true     # 是否启用触摸播放
-  click_to_play: false    # 是否启用点击播放（作为备用）
+  click_to_play: true    # 是否启用点击播放
   lazy_load: true         # 是否启用懒加载
   threshold: 0.8          # 触发自动播放的可见比例
   badge: true             # 是否显示Live标识
@@ -15,4 +14,5 @@ livephoto:
   keep_observing: false   # 是否持续观察元素
   hover_delay: 300        # 悬停延迟（毫秒）
   touch_delay: 100        # 触摸延迟（毫秒）
+  weixin_disable_autoplay: true # 微信环境下禁用自动播放
   

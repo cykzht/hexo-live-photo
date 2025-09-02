@@ -7,8 +7,8 @@ const fs = require('hexo-fs');
 const defaultConfig = {
   enable: true,
   autoplay: true,
-  hover_to_play: true, // 改为悬停触发
-  touch_to_play: true, // 添加触摸触发选项
+  hover_to_play: true,
+  click_to_play: true,
   lazy_load: true,
   threshold: 0.8,
   badge: true,
@@ -16,8 +16,9 @@ const defaultConfig = {
   badge_position: 'bottom-left',
   loading_animation: true,
   preload: 'auto',
-  hover_delay: 300, // 添加悬停延迟
-  touch_delay: 100  // 添加触摸延迟
+  keep_observing: false,
+  hover_delay: 300,
+  weixin_disable_autoplay: true
 };
 
 // 主插件类
