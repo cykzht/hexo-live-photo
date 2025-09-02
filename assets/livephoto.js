@@ -8,7 +8,6 @@ class LivePhoto {
     this.hasAutoPlayed = false;
     this.isPlaying = false;
     this.hoverTimeout = null;
-    this.touchTimeout = null;
     this.isWeixin = this.detectWeixinBrowser();
 
     // 在微信环境中调整配置
