@@ -13,6 +13,5 @@ livephoto:
   preload: 'auto'         # 视频预加载策略: auto, metadata, none
   keep_observing: false   # 是否持续观察元素
   hover_delay: 300        # 悬停延迟（毫秒）
-  touch_delay: 100        # 触摸延迟（毫秒）
   weixin_disable_autoplay: true # 微信环境下禁用自动播放
   

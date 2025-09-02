@@ -40,7 +40,6 @@ livephoto:
   preload: 'auto'
   keep_observing: false
   hover_delay: 300
-  touch_delay: 100
   weixin_disable_autoplay: true
 ```
 
