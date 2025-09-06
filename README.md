@@ -10,7 +10,7 @@ Today's smartphones (such as iPhone's Live Photo and similar features on some An
 
 ## Usage Instructions
 
-- [Chinese instructions](https://www.g2022cyk.top/2025/09/01/hexo-live-photo使用说明)
+- [中文说明](https://www.g2022cyk.top/2025/09/01/hexo-live-photo使用说明)
 - [English instructions](https://www.g2022cyk.top/2025/09/01/hexo-live-photo-user-guide)
 
 ## Installation
