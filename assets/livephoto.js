@@ -43,7 +43,11 @@ class LivePhoto {
 
     // 修改badge内容和样式
     if (badge) {
-      badge.innerHTML = this.config.badge_text + " | 点击播放";
+      if(!this.config.badge_text) {
+        badge.innerHTML = "点击播放";
+      } else{
+        badge.innerHTML = this.config.badge_text + " | 点击播放";
+      }
     }
   }
 
